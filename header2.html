@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <style>
+            .img{
+                position: fixed;
+                margin:0;
+                padding:0;
+                left:0;
+                top:0;
+            }
+            .header{
+                position: fixed;
+                left: 0;
+                right:0;
+                top: 0;
+                margin:0;
+                padding:0;	
+                display: inline;
+                height: 75px;
+                width: 100%;
+                background: black;
+                text-align: center;
+                color: #fff;
+                animation: glow 1s ease-in-out infinite alternate;
+                }
+            @keyframes glow {
+                from {
+                    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+                }
+                to {
+                    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0073e6, 0 0 40px #0073e6, 0 0 50px #0073e6, 0 0 60px #0073e6, 0 0 70px #0073e6;
+                }
+            }
+            /* Add a black background color to the top navigation */
+            .topnav {
+            position: absolute;
+            overflow: hidden;
+            left:70%;
+            }
+
+            /* Style the links inside the navigation bar */
+            .topnav a {
+            float: right;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            /* Change the color of links on hover */
+            .topnav a:hover {
+            background-color:#04AA6D;
+            color: black;
+            }
+
+            /* Add a color to the active/current link */
+            .topnav a.active {
+            color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <p ><h1>Sparks Bank</h1></p>
+        </div>
+        <div class="topnav">
+        <a href="history.php">Transaction History</a>
+        <a href="transact.php">Transact</a>
+        <a href="customer.php">Customers</a>
+        <a href="home.php"  >Home</a>
+        </div>
+          
+        <div class="img">
+            <img src="https://png.pngtree.com/png-clipart/20191204/ourlarge/pngtree-piggy-bank-icon-in-neon-style-png-image_2071232.jpg" 
+            alt="bankicon" height="75" width="75" >
+        </div> 
+                
+    </body>
+</html>
